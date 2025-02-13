@@ -19,6 +19,7 @@
             background: rgba(0, 0, 0, 0.9);
             justify-content: center;
             align-items: center;
+            overflow: hidden;
         }
 
         /* Ensure the image fits properly */
@@ -63,6 +64,14 @@
         .hero h1 {
             margin-bottom: 1rem;
         }
+
+        /* Background image */
+        body {
+            background-image: url('holo.png');
+            background-size: cover;
+            background-position: center center;
+            background-attachment: fixed;
+        }
     </style>
 </head>
 
@@ -71,13 +80,11 @@
     <header class="bg-white shadow-lg">
         <div class="container mx-auto px-8 py-4">
             <nav class="flex flex-col sm:flex-row items-center justify-between sm:items-start md:space-x-6">
-                <!-- First row: Name (only on mobile) -->
                 <div class="text-2xl font-bold text-gray-800 mb-2 sm:mb-0">
                     <a href="#" class="text-left">Oliwier R.</a>
                 </div>
 
-                <!-- Second row: Menu Items (only on mobile) -->
-                <ul class="flex flex-row sm:flex-row items-center sm:items-start  space-x-8 text-sm sm:text-base">
+                <ul class="flex flex-row sm:flex-row items-center sm:items-start space-x-8 text-sm sm:text-base">
                     <li><a href="#about" class="text-gray-800 hover:text-gray-600">About</a></li>
                     <li><a href="#portfolio" class="text-gray-800 hover:text-gray-600">Portfolio</a></li>
                     <li><a href="#contact" class="text-gray-800 hover:text-gray-600">Contact</a></li>
@@ -89,7 +96,7 @@
     <!-- Hero Section -->
     <section class="hero bg-gray-100 py-16 sm:py-20 lg:py-24">
         <div class="container mx-auto text-center">
-            <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-800 mb-4 animate-fade-in">Welcome to My Tattoo Portfolio</h1>
+            <h1 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-800 mb-4 animate-fade-in">Welcome to My Tattoo Portfolio</h1>
             <p class="text-lg sm:text-xl md:text-2xl lg:text-3xl text-gray-600 animate-fade-in">Get inked by a professional artist with years of experience.</p>
             <a href="#contact"
                 class="mt-8 inline-block px-8 py-3 bg-gray-800 text-white font-bold hover:bg-gray-700 text-sm sm:text-base lg:text-lg animate-bounce">Book
@@ -120,7 +127,8 @@
     <section id="portfolio" class="bg-gray-100 py-16 px-8">
         <div class="container mx-auto">
             <h2 class="text-3xl sm:text-4xl font-bold text-center text-gray-800 mb-8">My Portfolio</h2>
-            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-4">
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                <!-- Portfolio Items -->
                 <div class="portfolio-item">
                     <img src="Skull.jpeg" alt="Skull Tattoo" class="w-full h-48 object-cover rounded-lg shadow-lg cursor-pointer" onclick="openLightbox(this)">
                 </div>
@@ -131,31 +139,55 @@
                     <img src="Lion.jpg" alt="Lion Tattoo" class="w-full h-48 object-cover rounded-lg shadow-lg cursor-pointer" onclick="openLightbox(this)">
                 </div>
                 <div class="portfolio-item">
-                    <img src="Skull.jpeg" alt="Skull Tattoo 2" class="w-full h-48 object-cover rounded-lg shadow-lg cursor-pointer" onclick="openLightbox(this)">
+                    <img src="butterneck.jpg" alt="Skull Tattoo 2" class="w-full h-48 object-cover rounded-lg shadow-lg cursor-pointer" onclick="openLightbox(this)">
                 </div>
                 <div class="portfolio-item">
-                    <img src="Rose.jpeg" alt="Rose Tattoo 2" class="w-full h-48 object-cover rounded-lg shadow-lg cursor-pointer" onclick="openLightbox(this)">
+                    <img src="Mask.jpg" alt="Rose Tattoo 2" class="w-full h-48 object-cover rounded-lg shadow-lg cursor-pointer" onclick="openLightbox(this)">
                 </div>
                 <div class="portfolio-item">
-                    <img src="Lion.jpg" alt="Lion Tattoo 2" class="w-full h-48 object-cover rounded-lg shadow-lg cursor-pointer" onclick="openLightbox(this)">
+                    <img src="Mask2.JPG" alt="Lion Tattoo 2" class="w-full h-48 object-cover rounded-lg shadow-lg cursor-pointer" onclick="openLightbox(this)">
                 </div>
                 <div class="portfolio-item">
-                    <img src="Skull.jpeg" alt="Skull Tattoo 3" class="w-full h-48 object-cover rounded-lg shadow-lg cursor-pointer" onclick="openLightbox(this)">
+                    <img src="Wyki.jpg" alt="Skull Tattoo 3" class="w-full h-48 object-cover rounded-lg shadow-lg cursor-pointer" onclick="openLightbox(this)">
                 </div>
                 <div class="portfolio-item">
-                    <img src="Rose.jpeg" alt="Rose Tattoo 3" class="w-full h-48 object-cover rounded-lg shadow-lg cursor-pointer" onclick="openLightbox(this)">
+                    <img src="Underground.jpg" alt="Rose Tattoo 3" class="w-full h-48 object-cover rounded-lg shadow-lg cursor-pointer" onclick="openLightbox(this)">
                 </div>
                 <div class="portfolio-item">
-                    <img src="Rose.jpeg" alt="Rose Tattoo 2" class="w-full h-48 object-cover rounded-lg shadow-lg cursor-pointer" onclick="openLightbox(this)">
+                    <img src="IMG_1463.jpg" alt="Lion Tattoo 3" class="w-full h-48 object-cover rounded-lg shadow-lg cursor-pointer" onclick="openLightbox(this)">
                 </div>
                 <div class="portfolio-item">
-                    <img src="Lion.jpg" alt="Lion Tattoo 2" class="w-full h-48 object-cover rounded-lg shadow-lg cursor-pointer" onclick="openLightbox(this)">
+                    <img src="IMG_0818.jpg" alt="Skull Tattoo 4" class="w-full h-48 object-cover rounded-lg shadow-lg cursor-pointer" onclick="openLightbox(this)">
                 </div>
                 <div class="portfolio-item">
-                    <img src="Skull.jpeg" alt="Skull Tattoo 3" class="w-full h-48 object-cover rounded-lg shadow-lg cursor-pointer" onclick="openLightbox(this)">
+                    <img src="IMG_1097.jpg" alt="Rose Tattoo 4" class="w-full h-48 object-cover rounded-lg shadow-lg cursor-pointer" onclick="openLightbox(this)">
                 </div>
                 <div class="portfolio-item">
-                    <img src="Rose.jpeg" alt="Rose Tattoo 3" class="w-full h-48 object-cover rounded-lg shadow-lg cursor-pointer" onclick="openLightbox(this)">
+                    <img src="cat.jpg" alt="Lion Tattoo 4" class="w-full h-48 object-cover rounded-lg shadow-lg cursor-pointer" onclick="openLightbox(this)">
+                </div>
+                <div class="portfolio-item">
+                    <img src="tatt1.jpg" alt="Lion Tattoo 3" class="w-full h-48 object-cover rounded-lg shadow-lg cursor-pointer" onclick="openLightbox(this)">
+                </div>
+                <div class="portfolio-item">
+                    <img src="circle.jpg" alt="Skull Tattoo 4" class="w-full h-48 object-cover rounded-lg shadow-lg cursor-pointer" onclick="openLightbox(this)">
+                </div>
+                <div class="portfolio-item">
+                    <img src="cowboot.jpg" alt="Rose Tattoo 4" class="w-full h-48 object-cover rounded-lg shadow-lg cursor-pointer" onclick="openLightbox(this)">
+                </div>
+                <div class="portfolio-item">
+                    <img src="crown.jpg" alt="Lion Tattoo 4" class="w-full h-48 object-cover rounded-lg shadow-lg cursor-pointer" onclick="openLightbox(this)">
+                </div>
+                <div class="portfolio-item">
+                    <img src="Dino.jpg" alt="Lion Tattoo 3" class="w-full h-48 object-cover rounded-lg shadow-lg cursor-pointer" onclick="openLightbox(this)">
+                </div>
+                <div class="portfolio-item">
+                    <img src="flowersfine.jpg" alt="Skull Tattoo 4" class="w-full h-48 object-cover rounded-lg shadow-lg cursor-pointer" onclick="openLightbox(this)">
+                </div>
+                <div class="portfolio-item">
+                    <img src="Moon.jpg" alt="Rose Tattoo 4" class="w-full h-48 object-cover rounded-lg shadow-lg cursor-pointer" onclick="openLightbox(this)">
+                </div>
+                <div class="portfolio-item">
+                    <img src="shrooms1.jpg" alt="Lion Tattoo 4" class="w-full h-48 object-cover rounded-lg shadow-lg cursor-pointer" onclick="openLightbox(this)">
                 </div>
             </div>
         </div>
@@ -207,7 +239,9 @@
             <div class="flex justify-center mt-12">
                 <a href="https://wa.me/+447737170791" target="_blank" rel="noopener noreferrer"
                     class="whatsapp-btn bg-green-500 text-white font-bold py-3 px-8 rounded-lg hover:bg-green-400 focus:outline-none focus:shadow-outline shadow-lg flex items-center space-x-2">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" class="w-6 h-6">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-6 h-6">
+                        <path fill="white" d="M16.136 13.648l2.418 2.418c.196.196.196.51 0 .706-.196.196-.51.196-.707 0l-2.418-2.418c-.551.476-1.224.85-1.932 1.107-.02.014-.034.031-.056.046-1.607.779-3.383.494-4.58-.577-1.198-1.071-1.666-2.755-1.27-4.295.404-1.26 1.276-2.168 2.45-2.558 1.557-.529 3.373-.238 4.39 1.062.623.665.884 1.61.626 2.48-.259.866-.853 1.51-1.678 1.734-.476.145-.961.24-1.46.23-.12.009-.225-.03-.341-.07-.613-.153-1.258-.257-1.903-.255z"/>
+                    </svg>
                     <span class="text-sm sm:text-base">Contact via WhatsApp</span>
                 </a>
             </div>
@@ -219,36 +253,45 @@
         <p class="text-sm sm:text-base">&copy; 2025 Oliwier Rynkiewicz. All rights reserved.</p>
     </footer>
 
+    <!-- Lightbox Scripts -->
     <script>
-        function openLightbox(image) {
-            const lightbox = document.getElementById('lightbox');
-            const lightboxImg = document.getElementById('lightbox-img');
-            lightbox.style.display = 'flex';
-            lightboxImg.src = image.src;
+        let currentIndex = 0;
+
+        function openLightbox(imgElement) {
+            const lightbox = document.getElementById("lightbox");
+            const lightboxImg = document.getElementById("lightbox-img");
+            const portfolioImages = document.querySelectorAll('.portfolio-item img');
+            lightbox.style.display = "flex";
+            lightboxImg.src = imgElement.src;
+            currentIndex = Array.from(portfolioImages).indexOf(imgElement);
+            document.body.style.overflow = "hidden"; // Disable body scrolling when lightbox is open
         }
 
-        function closeLightbox() {
-            const lightbox = document.getElementById('lightbox');
-            lightbox.style.display = 'none';
+        function closeLightbox(event) {
+            event.stopPropagation(); // Prevent click event from closing lightbox when clicking image
+            document.getElementById("lightbox").style.display = "none";
+            document.body.style.overflow = "auto"; // Enable scrolling when lightbox is closed
         }
 
         function showPrev(event) {
             event.stopPropagation();
-            const currentImage = document.getElementById('lightbox-img');
-            const images = document.querySelectorAll('.portfolio-item img');
-            let currentIndex = Array.from(images).indexOf(currentImage);
-            currentIndex = (currentIndex - 1 + images.length) % images.length;
-            currentImage.src = images[currentIndex].src;
+            const portfolioImages = document.querySelectorAll('.portfolio-item img');
+            currentIndex = (currentIndex - 1 + portfolioImages.length) % portfolioImages.length;
+            document.getElementById("lightbox-img").src = portfolioImages[currentIndex].src;
         }
 
         function showNext(event) {
             event.stopPropagation();
-            const currentImage = document.getElementById('lightbox-img');
-            const images = document.querySelectorAll('.portfolio-item img');
-            let currentIndex = Array.from(images).indexOf(currentImage);
-            currentIndex = (currentIndex + 1) % images.length;
-            currentImage.src = images[currentIndex].src;
+            const portfolioImages = document.querySelectorAll('.portfolio-item img');
+            currentIndex = (currentIndex + 1) % portfolioImages.length;
+            document.getElementById("lightbox-img").src = portfolioImages[currentIndex].src;
         }
+
+        // Keyboard navigation
+        document.addEventListener('keydown', function (e) {
+            if (e.key === 'ArrowLeft') showPrev(e);
+            if (e.key === 'ArrowRight') showNext(e);
+        });
     </script>
 </body>
 
