@@ -1270,14 +1270,23 @@ document.querySelectorAll('a[href^="#"]').forEach(a => {
 /* ── CONTACT FORM ── */
 document.getElementById('cform').addEventListener('submit', function(e) {
   e.preventDefault();
-  const btn = this.querySelector('.fsub');
-  btn.textContent = 'Message Sent ✓';
-  btn.style.cssText = 'background:#25D366;color:#fff;';
-  setTimeout(() => {
-    btn.textContent = 'Send Enquiry →';
-    btn.style.cssText = '';
-    this.reset();
-  }, 3500);
+  const fn  = document.getElementById('fn').value.trim();
+  const ln  = document.getElementById('ln').value.trim();
+  const em  = document.getElementById('em').value.trim();
+  const st  = document.getElementById('st').value;
+  const msg = document.getElementById('msg').value.trim();
+
+  const lines = [
+    'Hi Oliwier! I found your website and I\'d love to book a tattoo session.',
+    '',
+    `Name: ${fn} ${ln}`,
+    `Email: ${em}`,
+    st  ? `Style: ${st}` : '',
+    msg ? `\nIdea:\n${msg}` : '',
+  ].filter(l => l !== undefined);
+
+  const text = encodeURIComponent(lines.join('\n').trim());
+  window.open('https://wa.me/447737170791?text=' + text, '_blank');
 });
 </script>
 </body>
